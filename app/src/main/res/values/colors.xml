@@ -2,10 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="blue_box">#2196F3</color>
-    <color name="red_box">#F44336</color>
-    <color name="yellow_box">#FFEB3B</color>
-    <color name="green_box">#4CAF50</color>
-    <color name="purple_box">#9C27B0</color>
-    <color name="orange_box">#FF9800</color>
+    <color name="blue_box">#1E88E5</color>
+    <color name="red_box">#E53935</color>
+    <color name="yellow_box">#FDD835</color>
+    <color name="green_box">#43A047</color>
+    <color name="purple_box">#8E24AA</color>
+    <color name="orange_box">#FB8C00</color>
 </resources>

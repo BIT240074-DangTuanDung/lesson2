@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="box_1">1</string>
+    <string name="box_2">2</string>
+    <string name="box_3">3</string>
+    <string name="box_4">4</string>
+    <string name="box_5">5</string>
+    <string name="box_6">6</string>
+    <string name="username_hint">UserName</string>
+    <string name="mssv_hint">MSSV</string>
+    <string name="click_me">Click me</string>
+    <string name="screen_2_title">Screen 2</string>
+    <string name="info_received_title">Thông tin nhận được</string>
+    <string name="username_label">UserName:</string>
+    <string name="mssv_label">MSSV:</string>
+    <string name="back_desc">Back</string>
+    <string name="err_empty_username">UserName không được để trống</string>
+    <string name="err_empty_mssv">MSSV không được để trống</string>
 </resources>

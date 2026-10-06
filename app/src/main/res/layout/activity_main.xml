@@ -5,126 +5,161 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="8dp"
     tools:context=".MainActivity">
 
+    <!-- Row 1: Box 1 (Blue) & Box 2 (Red) -->
     <TextView
         android:id="@+id/box1"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_margin="6dp"
-        android:background="@color/blue_box"
+        android:layout_height="110dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_blue_box"
         android:gravity="center"
-        android:text="1"
+        android:text="@string/box_1"
         android:textColor="@color/white"
-        android:textSize="48sp"
+        android:textSize="44sp"
         android:textStyle="bold"
-        app:layout_constraintWidth_percent="1"
+        app:layout_constraintEnd_toStartOf="@+id/box2"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/box2"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_margin="6dp"
-        android:background="@color/red_box"
+        android:layout_height="110dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_red_box"
         android:gravity="center"
-        android:text="2"
+        android:text="@string/box_2"
         android:textColor="@color/white"
-        android:textSize="48sp"
+        android:textSize="44sp"
         android:textStyle="bold"
-        app:layout_constraintWidth_percent="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/box1" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/box1"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Row 2: Box 3 (Yellow), Box 4 (Green), Box 5 (Purple) -->
     <TextView
         android:id="@+id/box3"
         android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:layout_margin="6dp"
-        android:background="@color/yellow_box"
+        android:layout_height="110dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_yellow_box"
         android:gravity="center"
-        android:text="3"
+        android:text="@string/box_3"
         android:textColor="@color/black"
-        android:textSize="48sp"
+        android:textSize="44sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/box4"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/box2" />
+        app:layout_constraintTop_toBottomOf="@+id/box1" />
 
     <TextView
         android:id="@+id/box4"
         android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:layout_margin="4dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="5dp"
-        android:background="@color/green_box"
+        android:layout_height="110dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_green_box"
         android:gravity="center"
-        android:text="4"
+        android:text="@string/box_4"
         android:textColor="@color/white"
-        android:textSize="48sp"
+        android:textSize="44sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/box6"
         app:layout_constraintEnd_toStartOf="@+id/box5"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/box3"
-        app:layout_constraintTop_toBottomOf="@+id/box2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/box1" />
 
     <TextView
         android:id="@+id/box5"
         android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:layout_margin="4dp"
-        android:layout_marginBottom="5dp"
-        android:background="@color/purple_box"
+        android:layout_height="110dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_purple_box"
         android:gravity="center"
-        android:text="5"
+        android:text="@string/box_5"
         android:textColor="@color/white"
-        android:textSize="48sp"
+        android:textSize="44sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/box6"
-        app:layout_constraintEnd_toStartOf="@+id/spacer"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/box4"
-        app:layout_constraintTop_toBottomOf="@+id/box2"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <View
-        android:id="@+id/spacer"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/box5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/box5"
-        app:layout_constraintTop_toTopOf="@+id/box5" />
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/box4"
+        app:layout_constraintTop_toBottomOf="@+id/box1" />
 
+    <!-- Row 3: Box 6 (Orange) -->
     <TextView
         android:id="@+id/box6"
         android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:layout_margin="4dp"
-        android:background="@color/orange_box"
+        android:layout_height="90dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_orange_box"
         android:gravity="center"
-        android:text="6"
+        android:text="@string/box_6"
         android:textColor="@color/white"
-        android:textSize="48sp"
+        android:textSize="44sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/box3" />
 
-    <TextView
-        android:id="@+id/footerText"
+    <!-- Inputs & Button Area -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilUserName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/username_hint"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilMssv"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/mssv_hint"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilUserName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMssv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnClickMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Đặng Tuấn Dũng - BIT240074"
-        android:textColor="@color/black"
-        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:text="@string/click_me"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
